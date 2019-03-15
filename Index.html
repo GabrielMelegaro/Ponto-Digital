@@ -5,7 +5,7 @@
     <meta charset="utf-8"/>
     <title>Ponto Digital</title>
     <link rel="stylesheet" type="text/css" media="screen" href="Style.css" />
-    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
     <header class="topo container">
         <div class="conteudo_topo content">
@@ -20,7 +20,9 @@
                     <li><a href="index.html#Contato">Contatos</a></li>
                 </ul>
             </nav>    
+            <span id="btn_menu" onclick="botao_menu()">M</span>
         </div>
+    </header>
         <section id="banner">
                 <img id="banner" src="ibagens/iStock-603992138-912x513(modified 2).png" alt="Banner">
                 <picture>
@@ -29,7 +31,6 @@
                 </picture>        
         </section>
     </header>
-    <article>
         <section id="sobre">
             <h2>Sobre</h2>
                 <div id="conteudo_sobre">
@@ -61,7 +62,6 @@
                             </p>
                             </div>
                         </section>
-                    </article>
         <section id="Planos">
             <h2>Planos</h2>
             <div class="conteudo_planos content">
@@ -163,14 +163,24 @@
                 <br />
                 <input id="nome" id="email" type="email" required/>
                 <br />
-                
+
                 <label for="mensagem">Mensagem:</label>  
                 <br />
-                <input name="mensagem" id="mensagem" type="text" maxlength="500" minlength="1" required/>
+                <textarea name="mensagem" id="Mensagem" cols="100" rows="15"></textarea>
                 <br />
-                <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar">
                 </form>
             </div>
+        </section>
+        <section id="Contato">
+            <h2>Contato</h2>
+            <div class="conteudo_contato">
+                <p>Redes Sociais 
+                    Telefone: 1234 6789 
+                    Fale Conosco 
+                    Reclame Aqui</p>
+            </div>
+            
         </section>
             <script>
                 function botao_menu() {
